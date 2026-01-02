@@ -30,7 +30,7 @@ nav {
     padding: 20px 8%;
     background-color: orange;
     backdrop-filter: var(--black);
-    width: 95%;
+    width: 90%;
     justify-self: center;
     align-self: center;
     justify-content: center;
@@ -600,6 +600,7 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
+
 
 
 
