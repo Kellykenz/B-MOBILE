@@ -30,8 +30,8 @@ nav {
     padding: 20px 8%;
     background-color: orange;
     backdrop-filter: var(--black);
-    width: 95%;
-    justify-self: center;
+    width: 90%;
+    justify-self: space-evenly;
     align-self: center;
     margin-top: 15px;
     border-radius: 20px;
@@ -47,6 +47,7 @@ nav {
         display:flex;
         flex-direction: column;
         justify-content:center;
+        justify-self:space-evenly;
         align-items:center;
         
     }
@@ -608,4 +609,5 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
+
 
