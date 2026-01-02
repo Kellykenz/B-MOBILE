@@ -112,7 +112,8 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     padding: 0 8%;
-    background-color: white;
+    background-color: url("hero001.jpg");
+    object-fit:cover;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     color: black;
@@ -377,4 +378,5 @@ footer {
     }
 
 }
+
 
