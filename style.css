@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --black: #ffffff;
+    --white: #ffffff;
+    --gold: #c9a24d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.4;
+    font-family: cursive;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: orange;
+    backdrop-filter: var(--black);
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 15px;
+    border-radius: 20px;
+
+
+    border-bottom: 1px solid rgba (0, 0, 0, 0.06);
+    -webkit-backdrop-filter: 12px;
+
+}
+
+.box-design {
+    width: 62px;
+    background-color: white;
+    height: 100px;
+    position: absolute;
+    opacity: 20%;
+    border-radius: 20px;
+    border: 2px solid rgb(117, 4, 117) 
+}
+
+
+#nav-btn {
+    position: absolute;
+    right: 10%;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    border: transparent;
+    color: rgb(110, 9, 110);
+    font-weight: 600;
+    display: none;
+
+}
+
+@media screen and (max-width: 480px) {
+    #nav-btn {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {}
+
+.logo {
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav ul li {
+    transition: all ease-in-out 0.2s;
+}
+
+nav ul li:active {
+    transform: scale(0.9);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: black;
+
+}
+
+@media screen and (max-width: 360px) {
+    .hero {
+        min-height: 60vh;
+    }
+}
+
+.hero h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+}
+
+@media screen and (max-width: 390px) {
+    .hero h2 {
+        position: absolute;
+        top: 20%;
+    }
+
+    section p {
+        padding-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .hero h2 {
+        padding-top: 15px;
+        font-size: 50px;
+    }
+
+    .hero p {
+        position: absolute;
+        top: 36%;
+        font-size: 13px;
+        display: none;
+    }
+
+}
+
+.hero span {
+    color: var(--gold);
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+.mobile-hero-p {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.gold {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.gold:hover {
+    background: var(--gold);
+    color: var(--black);
+}
+
+#together-btn {
+    width: 220px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(182, 173, 173);
+    color: white;
+    font-weight: 600;
+    transition: all ease-in-out 0.2s;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #together-btn {
+        position: absolute;
+        top: 15%;
+
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #together-btn {
+        position: absolute;
+        top: 14%;
+    }
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    gap: 30px;
+}
+
+@media screen and (max-width: 360px) {
+    .btn-container {
+        margin-top: 200px;
+    }
+}
+
+
+#our-service {
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    transition: all ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 480px) {
+    #our-service:hover {
+        background-color: orange;
+    }
+
+    #our-service:active {
+        transform: scale(0.9);
+    }
+}
+
+#repair-now {
+    width: 140px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    transition: all ease-in-out 0.2s;
+
+}
+
+@media screen and (max-width: 480px) {
+    #repair-now:hover {
+        background-color: orange;
+    }
+
+    #repair-now:active {
+        transform: scale(0.9);
+    }
+}
+
+
+
+/* SECTIONS */
+section {
+    padding: 100px 8%;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#about {
+    background-color: orange;
+    border-top-left-radius: 20px;
+    ;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.glass-about-container {
+    width: 100%;
+    height: 30vh;
+    background-color: bisque;
+    border-radius: 40px;
+    opacity: 15%;
+    position: absolute;
+    left: 0%;
+}
+
+/* WORK */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    border: 5px solid rgba(37, 29, 29, 0.1);
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--black);
+    transform: translateY(-8px);
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+
+#get-intouch-btn{
+    border: 2px solid white;
+    color: white;
+    transition: all ease-in-out 0.2s;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+}
+
+
+
+#get-intouch-btn:hover{
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(219, 15, 219);
+    transform: scale(0.8);
+    font-weight: 600;
+    transition: all ease-in-out 0.2s;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+}

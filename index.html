@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KENZDY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <button id="nav-btn">BOOK </button>
+        <h2 class="logo" style="font-family: cursive;"><span style="color:purple; font-size: 12px; ">B-TECH</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="box-design"></div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h4 style="padding-bottom: 5px; font-family: cursive; "><button id="together-btn">Together we can fix
+                anything</button></h4>
+        <h2 style="font-family: cursive;  "> We Provide Phone Repair Services </h2>
+        <p style="font-family: cursive; font-size: 13px; color:rgb(163, 128, 11); font-weight: 600;">FAST, RELIABLE &
+            AFFORDABLE REPAIRS, TRUSTED REPAIRS FOR ALL PHONE MODELS.</p>
+        <a href="#work" class="btn" style="font-family: cursive;">View Work</a>
+
+        <div class="btn-container">
+            <button id="our-service">OUR SERVICES</button>
+            <button id="repair-now">REPAIR NOW</button>
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h3>ABOUT US</h3>
+        <h2 class="logo" style="font-family: cursive; padding-bottom: 30px;"><span style="color:purple; font-size: 12px; ">B-TECH</h2>
+            <div class="glass-about-container"></div>
+        <p>
+            We provide professional phone repair services for all major smartphone brands. <br>From cracked screen to
+            battery replacements and software issues, we offer fast, reliable, and affordable solutions you can trust.
+        </p>
+        
+
+        <div class="" </section>
+
+            <!-- WORK -->
+            <section id="work" class="work">
+                <h3>Selected Work</h3>
+                 <h2 class="logo" style="font-family: cursive; padding-bottom: 30px;"><span style="color:rgb(247, 242, 247); font-size: 12px; ">CAN I TRUST YOU WITH MY PHONE?</span></h2>
+
+                <div class="projects">
+                    
+                    <a href="project1.html" style="text-decoration: none; color:white">
+                        <div class="card">
+                            
+                            <h4>Iphone 11 Screen Replacement</h4>
+                            <p>Cracked screen replaced with a high-quality display.</p>
+                            <i style="color: rgb(163, 127, 127)">completed in 40 minutes</i>
+                        </div>
+                    </a>
+
+                    <a href="index copy.html" style="text-decoration: none; color:white">
+                        <div class="card">
+                            <h4>Samsung Galaxy A51 Battery Repair</h4>
+                            <p>Phone shutting down unexpectedly. Battery replaced and fully tested.</p>
+                             <i style="color: rgb(163, 127, 127)">Same-day Service</i>
+                        </div>
+                    </a>
+
+                    <a href="index.html" style="text-decoration: none; color:white">
+                        <div class="card">
+                            <h4>Iphone X charging Port Repair</h4>
+                            <p>Device not charging properly. Charging port cleaned and repaired.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="contact">
+                <h3>Let’s Work</h3>
+                <p>Need A Phone Repair? Let’s fix your phone</p>
+                <a href="mailto:kelsonspencer@gmail.com" class="btn gold" id="get-intouch-btn">Get in Touch</a>
+            </section>
+
+            <footer>
+                <p>© 2025 KENZDY. Crafted with precision.</p>
+            </footer>
+
+            <script>
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                });
+
+                document.querySelectorAll('section').forEach(sec => {
+                    sec.style.opacity = 0;
+                    sec.style.transform = 'translateY(40px)';
+                    sec.style.transition = '0.8s ease';
+                    observer.observe(sec);
+            </script>
+</body>
+
+</html>
