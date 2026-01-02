@@ -44,11 +44,7 @@ nav {
 
 @media (max-width:320px) and (max-width:480px) {
     nav {
-        display:flex;
-        flex-direction: column;
-        justify-content:center;
-        justify-self:space-evenly;
-        align-items:center;
+        margin: 0 auto;
         
     }
 }
@@ -609,6 +605,7 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
+
 
 
 
