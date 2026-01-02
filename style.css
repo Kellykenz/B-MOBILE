@@ -42,6 +42,16 @@ nav {
 
 }
 
+@media (max-width:320px) and (max-width:480px) {
+    nav {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+}
+
 .box-design {
     width: 62px;
     background-color: white;
@@ -598,3 +608,4 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
+
