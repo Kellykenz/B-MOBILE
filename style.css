@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 :root {
-    --black: #ffffff;
+    --black: #a89e9e;
     --white: #ffffff;
     --gold: #c9a24d;
 }
@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: san-serif;
+    font-family: sans-serif;
 }
 
 body {
@@ -18,6 +18,8 @@ body {
     color: var(--white);
     line-height: 1.4;
     font-family: cursive;
+    overflow-x: hidden;
+
 }
 
 /* NAV */
@@ -46,9 +48,7 @@ nav {
     height: 100px;
     position: absolute;
     opacity: 20%;
-    border-radius: 20px;
-    border: 2px solid rgb(117, 4, 117);
-    display:none;
+    display: none;
 }
 
 
@@ -112,41 +112,31 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     padding: 0 8%;
-    background-color: url("hero001.jpg");
-    object-fit:cover;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background: url("hero001.avif");
+    object-fit: contain;
+
     color: black;
 
 }
 
-@media screen and (max-width: 360px) {
-    .hero {
-        min-height: 60vh;
-    }
-}
 
 .hero h2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 300;
-}
-
-@media screen and (max-width: 390px) {
-    .hero h2 {
-        position: absolute;
-        top: 20%;
-    }
-
-    section p {
-        padding-top: 50px;
-    }
-
+    font-family: cursive;
 }
 
 @media screen and (max-width: 360px) {
+
+    .hero {
+        min-height: 60vh;
+    }
+
+
     .hero h2 {
-        padding-top: 15px;
+        padding-top: 20px;
         font-size: 50px;
+        font-family: cursive;
     }
 
     .hero p {
@@ -154,9 +144,58 @@ nav a:hover {
         top: 36%;
         font-size: 13px;
         display: none;
+
     }
 
 }
+
+@media screen and (max-width: 390px) {
+
+    .hero {
+        width: 100%;
+        min-height: 40vh;
+    }
+    .hero h2 {
+        position: absolute;
+        top: 20%;
+        font-family: cursive;
+    }
+
+
+    section p {
+        padding-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 60px;
+        color: rgb(86, 81, 87);
+        font-family: cursive;
+    }
+
+    .hero p {
+        position: absolute;
+        top: 36%;
+        font-size: 13px;
+        display: none;
+
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero h2 {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        font-size: 50px;
+        font-family: cursive;
+    }
+
+}
+
+
 
 .hero span {
     color: var(--gold);
@@ -234,21 +273,46 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     align-self: flex-end;
-    gap: 30px;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero h2{
+        position:absolute;
+        top: 21%;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
+    .btn-container{
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .btn-container{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .btn-container {
-        margin-top: 200px;
+        margin-top: 250px;
     }
 }
 
 
 #our-service {
     width: 140px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    transition: all ease-in-out 0.2s;
+    color: white;
     transition: all ease-in-out 0.2s;
 }
 
@@ -264,10 +328,11 @@ nav a:hover {
 
 #repair-now {
     width: 140px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
     transition: all ease-in-out 0.2s;
+    color: white;
 
 }
 
@@ -296,9 +361,7 @@ h3 {
 
 #about {
     background-color: orange;
-    border-top-left-radius: 20px;
-    ;
-    border-top-right-radius: 20px;
+
     position: relative;
 }
 
@@ -336,20 +399,18 @@ h3 {
 }
 
 
-#get-intouch-btn{
+#get-intouch-btn {
     border: 2px solid white;
     color: white;
     transition: all ease-in-out 0.2s;
 }
 
 
-@media screen and (max-width: 480px) {
-    
-}
+@media screen and (max-width: 480px) {}
 
 
 
-#get-intouch-btn:hover{
+#get-intouch-btn:hover {
     border: none;
     border-radius: 2px;
     background-color: rgb(219, 15, 219);
@@ -376,7 +437,164 @@ footer {
     section {
         padding: 80px 6%;
     }
-
 }
 
 
+
+
+
+
+/* Color Palette 
+   Orange: #FF8C00 
+   Purple: #6A0DAD
+   White: #FFFFFF
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    /* Off-white for contrast */
+}
+
+.work-section {
+    margin-top: 100px;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #6A0DAD;
+    /* Purple */
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: #FF8C00;
+    /* Orange */
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Work Card */
+.work-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(106, 13, 173, 0.1);
+    /* Subtle Purple Shadow */
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image Hover Effect */
+.image-container {
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show After image underneath, Before image on top */
+.img-before {
+    z-index: 2;
+}
+
+.work-card:hover .img-before {
+    opacity: 0;
+}
+
+/* Labels */
+.label-before,
+.label-after {
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 3;
+    text-transform: uppercase;
+}
+
+.label-before {
+    left: 10px;
+    background-color: #6A0DAD;
+    /* Purple */
+    color: white;
+}
+
+.label-after {
+    right: 10px;
+    background-color: #FF8C00;
+    /* Orange */
+    color: white;
+}
+
+/* Content */
+.card-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.card-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 15px;
+    background-color: rgba(255, 140, 0, 0.1);
+    /* Light Orange */
+    color: #FF8C00;
+    /* Dark Orange */
+    border: 1px solid #FF8C00;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
