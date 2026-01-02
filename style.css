@@ -33,7 +33,6 @@ nav {
     width: 90%;
     justify-self: center;
     align-self: center;
-    justify-content: center;
     margin-top: 15px;
     margin-left: 20px;
     border-radius: 20px;
@@ -631,6 +630,7 @@ body {
 #send:active{
     transform: scale(0.9);
 }
+
 
 
 
