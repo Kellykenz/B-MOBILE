@@ -47,7 +47,8 @@ nav {
     position: absolute;
     opacity: 20%;
     border-radius: 20px;
-    border: 2px solid rgb(117, 4, 117) 
+    border: 2px solid rgb(117, 4, 117);
+    display:none;
 }
 
 
@@ -376,3 +377,4 @@ footer {
     }
 
 }
+
